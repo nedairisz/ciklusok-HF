@@ -46,14 +46,26 @@ Egészítsd ki a feladatot, hogy ha páros szám, akkor BAM-ot írjon, és ha 3-
 1, BAM, BUMM, BAM, 5, BUMMBAM, 7 
 """
 def feladat4(a:int):
+    if (a<=0):
+        print("Hiba!")
+        return
     i = 1
     while i <= a:
         if i % 3 == 0 and i % 2 == 0:
-            print("BUMMBAM", end=", ")
+            if i == a:
+                print(i)
+            else:
+                print("BUMMBAM", end=", " )
         elif i % 3 == 0:
-            print("BUMM", end=", ")
+            if i == a:
+                print(i)
+            else:
+                print("BUMM", end=", ")
         elif i % 2 == 0:
-            print("BAM", end=", ")
+            if i == a:
+                print(i)
+            else:
+                print("BAM", end=", ")
         else:
             if i == a:
                 print(i)
